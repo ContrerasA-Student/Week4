@@ -1,0 +1,20 @@
+
+#ps4p5
+#inputphase
+lname = input("Enter Last Name: ") 
+NumberofDependants = float(input("Enter Number of Dependents: "))
+GrossIncome = float(input("Enter Gross Income: "))
+#processphase
+AdjustedGrossIncome = GrossIncome - (NumberofDependants * 12000)
+if AdjustedGrossIncome > 50000:
+  TaxRate = 0.2
+else: TaxRate = 0.1
+IncomeTax = AdjustedGrossIncome * TaxRate
+if IncomeTax < 0: 
+  IncomeTax = 100
+#outputphase
+print("Last Name: ", lname)
+print("Gross Income: ", GrossIncome)
+print("Number of Dependants: ", NumberofDependants)
+print("Adjusted Gross Income: ", AdjustedGrossIncome)
+print("Income Tax Rate: ", TaxRate)
