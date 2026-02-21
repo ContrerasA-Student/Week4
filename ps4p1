@@ -1,0 +1,16 @@
+#ps4p1
+#inputphase
+Quantity = int(input("Enter Quantity of item: ")) 
+#processphase
+if Quantity >= 1000:
+  unitprice = 3.00
+else: unitprice = 5.00
+Extendedprice = Quantity * unitprice
+Tax = Extendedprice * 0.07
+Total = Extendedprice + Tax
+#outputphase
+print("Quantity of Items: ", Quantity)
+print("Unit Price: ", unitprice)
+print("Extended Price: ", Extendedprice)
+print("Tax: ", Tax)
+print("Total: ", Total)
