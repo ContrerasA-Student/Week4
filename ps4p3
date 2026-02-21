@@ -1,0 +1,12 @@
+#ps4p3
+#inputphase
+NumberofBooks = int(input("Enter number of books: "))
+Costperbook = float(input("Enter Cost per book: "))
+#processphase
+ordertotal = NumberofBooks * Costperbook
+if ordertotal > 50:
+  shippingcost = 0
+else: shippingcost = 25
+  #outputphase
+print("Order Total: ", ordertotal)
+print("Shipping Cost: ", shippingcost)
