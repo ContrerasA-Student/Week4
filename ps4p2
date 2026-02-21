@@ -1,0 +1,13 @@
+#ps4p2
+#inputphase
+item = input("Enter Item: A or B: ")
+Quantity = int(input("Enter Quantity: "))
+#processphase
+if item == "A": 
+  unitprice = 10
+else: unitprice = 20
+Extendedprice = unitprice * Quantity
+#outputphase
+print("Item is A: ", item)
+print("Unit Price is: ", unitprice)
+print("Extended Price is: ", Extendedprice)
