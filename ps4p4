@@ -1,0 +1,14 @@
+#ps4p4
+#inputphase
+appliancename = input("Enter the name of the appliance: ") 
+appliancecost = float(input("Enter cost of the appliance: "))
+#processphase
+if appliancecost > 1000: 
+  warrantycost = appliancecost * .1
+else: warrantycost = appliancecost * .05
+Total = appliancecost + warrantycost
+#outputphase
+print("Appliance Name: ", appliancename)
+print("applicance Cost: ", appliancecost)
+print("Warranty Cost: ", warrantycost)
+print("Total Cost: ", Total)
