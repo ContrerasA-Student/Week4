@@ -1,3 +1,4 @@
+Armando Contreras 2/21/25
 #ps4p1
 #inputphase
 Quantity = int(input("Enter Quantity of item: ")) 
